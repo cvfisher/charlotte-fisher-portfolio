@@ -15,12 +15,8 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
+			href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
 			rel="stylesheet"
 		/>
 
@@ -46,21 +42,21 @@
 					<li class="nav__item">
 						<a href="#work" class="nav__link">My Work</a>
 					</li>
+					<li class="nav__item">
+						<a href="#contact" class="nav__link">Contact</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
+		<section class="slide"></section>
 		<!-- Introduction -->
 		<section class="intro" id="home">
 			<h1 class="section__title section__title--intro">
 				Hi, I'm <strong>Charlotte</strong>
 			</h1>
 			<p class="section__subtitle section__subtitle--intro">front-end dev</p>
-			<img
-				class="intro__img"
-				src="img/updated hero img.gif"
-				alt="A pixel art
-			gif of a web developer at their desk"
-			/>
+			<img class="intro__img" src="img/pixel-art-web-dev.gif" alt="A pixel art
+			gif of a web developer at their desk"" />
 		</section>
 		<!-- My services -->
 		<section class="my-services" id="services">
@@ -100,7 +96,7 @@
 				<!--- / service -->
 			</div>
 			<!--- / services -->
-			<a href="#work" class="btn">My Work</a>
+			<a href="#work" class="btn btn--portfolio">My Work</a>
 		</section>
 
 		<!-- About me -->
@@ -149,25 +145,74 @@
 					<img src="img/portfolio-04.jpg" alt="" class="portfolio__img" />
 				</a>
 				<!-- Portfolio item 05 -->
-				<a href="#" class="portfolio__item">
+				<a href="#" class="portfolio__item portfolio__item--extra">
 					<img src="img/portfolio-05.jpg" alt="" class="portfolio__img" />
 				</a>
 				<!-- Portfolio item 06 -->
-				<a href="#" class="portfolio__item">
+				<a href="#" class="portfolio__item portfolio__item--extra">
 					<img src="img/portfolio-06.jpg" alt="" class="portfolio__img" />
 				</a>
 				<!-- Portfolio item 07 -->
-				<a href="#" class="portfolio__item">
+				<a href="#" class="portfolio__item portfolio__item--extra">
 					<img src="img/portfolio-07.jpg" alt="" class="portfolio__img" />
 				</a>
 				<!-- Portfolio item 08 -->
-				<a href="#" class="portfolio__item">
+				<a href="#" class="portfolio__item portfolio__item--extra">
 					<img src="img/portfolio-08.jpg" alt="" class="portfolio__img" />
 				</a>
 				<!-- Portfolio item 09 -->
-				<a href="#" class="portfolio__item">
+				<a href="#" class="portfolio__item portfolio__item--extra">
 					<img src="img/portfolio-09.jpg" alt="" class="portfolio__img" />
 				</a>
+			</div>
+			<button id="see-more-btn" class="btn">See More</button>
+		</section>
+
+		<!-- Contact form -->
+		<section id="contact">
+			<div class="contact">
+				<h2 class="section__title section__title--contact">Get in touch</h2>
+				<p class="section__subtitle section__subtitle--contact">
+					Let's make something beautiful
+				</p>
+
+				<form
+					method="POST"
+					data-netlify="true"
+					name="contact"
+					class="contact-form"
+				>
+					<input type="hidden" name="form-name" value="contact" />
+
+					<div class="form-row">
+						<div class="form-field">
+							<label for="name">Name</label>
+							<input id="name" name="name" type="text" placeholder="John Doe" />
+						</div>
+
+						<div class="form-field">
+							<label for="email">Email</label>
+							<input
+								id="email"
+								name="email"
+								type="email"
+								placeholder="johndoe@gmail.com"
+								required
+							/>
+						</div>
+					</div>
+
+					<div class="form-field">
+						<label for="message">Message</label>
+						<textarea
+							id="message"
+							name="message"
+							placeholder="Your enquiry or project details"
+						></textarea>
+					</div>
+
+					<button type="submit" class="btn btn--send">Send</button>
+				</form>
 			</div>
 		</section>
 

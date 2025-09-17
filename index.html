@@ -4,6 +4,15 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Charlotte Fisher Portfolio Website</title>
+
+		<link rel="manifest" href="/manifest.json" />
+		<meta name="theme-color" content="#373951" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta
+			name="apple-mobile-web-app-status-bar-style"
+			content="black-translucent"
+		/>
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -20,7 +29,7 @@
 			rel="stylesheet"
 		/>
 
-		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="../css/style.css" />
 	</head>
 	<body>
 		<header>
@@ -56,7 +65,7 @@
 			</h1>
 			<p class="section__subtitle section__subtitle--intro">front-end dev</p>
 			<img class="intro__img" src="img/pixel-art-web-dev.gif" alt="A pixel art
-			gif of a web developer at their desk"" />
+			gif of a web developer at their desk" width: 100px; loading="lazy"/>
 		</section>
 		<!-- My services -->
 		<section class="my-services" id="services">
@@ -115,8 +124,12 @@
 			</div>
 			<img
 				src="img/charlotte-fisher-web-developer.webp"
-				alt="8-bit pixel art of Charlotte against a solid deep purple background"
+				alt="8-bit pixel art of
+			Charlotte against a solid deep purple background"
 				class="about-me__img"
+				loading="lazy"
+				height="250px;"
+				;
 			/>
 		</section>
 
@@ -165,7 +178,7 @@
 					<img src="img/portfolio-09.jpg" alt="" class="portfolio__img" />
 				</a>
 			</div>
-			<button id="see-more-btn" class="btn">See More</button>
+			<button id="see-more-btn" class="btn btn==see-more">See More</button>
 		</section>
 
 		<!-- Contact form -->

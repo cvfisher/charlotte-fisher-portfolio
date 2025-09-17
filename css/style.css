@@ -4,8 +4,6 @@
 	box-sizing: border-box;
 }
 
-/* Custom properties, update for own design */
-
 /* General styles */
 
 html {
@@ -41,13 +39,13 @@ html {
 }
 
 body {
-	background: var(--clr-light);
 	color: var(--clr-dark);
 	margin: 0;
 	font-family: var(--ff-primary);
 	font-size: var(--fs-body);
 	line-height: 1.6;
 	transition: ease-in-out 0.3s;
+	background-color: var(--clr-light);
 }
 
 section {
@@ -61,6 +59,7 @@ img {
 
 :focus-visible {
 	outline: 3px solid var(--clr-light-accent);
+
 	outline-offset: 3px;
 }
 
@@ -223,6 +222,7 @@ header.scroll-up {
 }
 
 /* Hamburger when nav is open */
+
 .nav-open .hamburger,
 .nav-open .hamburger::before,
 .nav-open .hamburger::after {
@@ -461,7 +461,7 @@ header.scroll-up {
 .portfolio {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	padding-bottom: 2em;
+
 	gap: 2em;
 }
 @media (min-width: 1024px) {
@@ -501,9 +501,9 @@ header.scroll-up {
 /* Show extra items when toggled */
 .portfolio.show-extra .portfolio__item--extra {
 	max-height: 500px; /* adjust based on image size */
+
 	opacity: 1;
 }
-
 /* Contact form */
 
 #contact {
@@ -647,16 +647,4 @@ header.scroll-up {
 
 .social-list__link {
 	padding: 0.5em;
-}
-
-.portfolio-item-individual {
-	padding: 0 2em 2em;
-	max-width: 1000px;
-	margin: 0 auto;
-}
-
-.portfolio-item-individual p {
-	max-width: 600px;
-	margin-left: auto;
-	margin-right: auto;
 }

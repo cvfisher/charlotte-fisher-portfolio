@@ -321,6 +321,7 @@ header.scroll-up {
 
 .intro {
 	position: relative;
+	padding-top: calc(5em - 4em);
 }
 
 .intro__img {

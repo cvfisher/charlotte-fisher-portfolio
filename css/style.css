@@ -140,7 +140,14 @@ h3 {
 	transform: scale(1.1);
 	background-color: var(--clr-mid-accent);
 }
-
+.portfolio.show-extra + #see-more-btn {
+	margin-top: 5em;
+}
+.btn--send {
+	border: none;
+	margin: 0 auto;
+	margin-top: 2em;
+}
 /* Header */
 
 header {
@@ -582,11 +589,6 @@ header.scroll-up {
 .form-field textarea {
 	font-family: var(--ff-primary);
 	max-height: 300px;
-}
-
-.btn--send {
-	border: none;
-	margin: 0 auto;
 }
 
 @media (min-width: 800px) {
